@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <h1><b>Gelato Community</b></h1>
+  <h1><b>RodriGelato Community</b></h1>
   <p><i>Jellyfin Stremio Integration Plugin - Versión Comunidad</i></p>
 </div>
 
