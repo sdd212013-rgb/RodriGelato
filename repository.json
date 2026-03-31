@@ -1,0 +1,18 @@
+{
+  "repositories": [
+    {
+      "name": "Gelato Community",
+      "owner": "TU-USUARIO",
+      "overview": "Jellyfin Stremio plugin - Soporta TODOS los addons de la comunidad",
+      "imageUrl": "https://raw.githubusercontent.com/TU-USUARIO/Gelato-Community/main/logo.png",
+      "id": "gelato-community",
+      "version": "1.0.0",
+      "manifestUrl": "https://raw.githubusercontent.com/TU-USUARIO/Gelato-Community/main/manifest.json",
+      "targetAbi": "10.11.0.0",
+      "targetAbiVersion": "10.11.0.0",
+      "targetFramework": "net8.0",
+      "source": "GitHub",
+      "timestamp": "2026-03-31T00:00:00Z"
+    }
+  ]
+}
