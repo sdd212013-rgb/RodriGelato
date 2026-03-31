@@ -8,8 +8,8 @@
       "id": "gelato-community",
       "version": "1.0.0",
       "manifestUrl": "https://raw.githubusercontent.com/sdd212013-rgb/RodriGelato/main/manifest.json",
-      "targetAbi": "10.11.2.0",
-      "targetAbiVersion": "10.11.2.0",
+      "targetAbi": "10.11.0.0",
+      "targetAbiVersion": "10.11.0.0",
       "targetFramework": "net8.0",
       "source": "GitHub",
       "timestamp": "2026-03-31T00:00:00Z"
