@@ -24,30 +24,21 @@ Bring the power of Stremio addons directly into Jellyfin. This plugin replaces J
 
 ## Usage
 
-1. Setup an aiostreams manifest. You can selfhost or use an public instance, for example: [Elfhosted public instance](https://aiostreams.elfhosted.com/stremio/configure)
+### Uso con plugins de la comunidad
+
+1. Configura tu addon de Stremio favorito:
+   - **Torrentio**: `https://torrentio.strem.fun/{tu-config}/manifest.json`
+   - **Comet**: `https://comet.elfhosted.com/manifest.json` (o tu instancia self-hosted)
+   - **MediaFusion**: `https://mediafusion.elfhosted.com/manifest.json`
+   - **Orion**: `https://orion.elfhosted.com/manifest.json`
+   - Cualquier otro: usa su URL de manifest (normalmente termina en `/manifest.json`)
+
+2. En Jellyfin → Plugins → Gelato → Settings:
+   - Pega la URL del manifest del addon que quieras.
+   - Puedes tener un manifest diferente por usuario (ideal para cuentas con restricciones de edad).
+
+3. Añade las rutas configuradas a tu librería de Jellyfin y haz scan.
    
-   If you are new to debrid and are signing up please use one of my <a href="https://github.com/lostb1t/Gelato?tab=readme-ov-file#support-me">referrals</a>.
-   
-   At minimum you need the **tmdb addon enabled** for search and one addon that provides streams (comet for example).
-   Alternative you can import the [starter config](aiostreams-config.json). Remember to enable your debrid providers under services after importing the config.
-   
-   **p2p support currently in beta**
-
-2. Make sure you are running Jellyfin 10.11 and add `https://raw.githubusercontent.com/lostb1t/Gelato/refs/heads/gh-pages/repository.json` to your plugin repositories.
-
-3. Install and configure the plugin.
-   **Nota:** Ahora soporta **cualquier addon de Stremio** (Torrentio, Comet, MediaFusion, Orion, etc.).  
-AIOStreams sigue siendo compatible si quieres un agregador.
-
-4. Add the configured base paths to the Jellyfin library of your choice. After adding them, start a library scan.
-
-4.5 For shows, enable the "Gelato missing season/episode fetcher" and put
-it on too of the metadata downloaders.
-
-5. Profit! Now search for your favorite movie and start streaming. Or run the catalog import task to populate your db.
-
-For a more in depth guide see [starter guide](https://github.com/lostb1t/Gelato/discussions/40)
-
 ## Notes
 
 - Ahora soporta **cualquier addon de Stremio** (Torrentio, Comet, MediaFusion, Orion, etc.)
