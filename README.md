@@ -43,3 +43,5 @@ Este plugin reemplaza la búsqueda de Jellyfin con resultados de Stremio y permi
 ### Instalación del plugin
 
 Añade este repositorio en Jellyfin:
+
+https://raw.githubusercontent.com/sdd212013-rgb/Gelato-Community/refs/heads/gh-pages/repository.json
