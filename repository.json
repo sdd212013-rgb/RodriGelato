@@ -2,12 +2,12 @@
   "repositories": [
     {
       "name": "Gelato Community",
-      "owner": "TU-USUARIO",
+      "owner": "sdd212013-rgb",
       "overview": "Jellyfin Stremio plugin - Soporta TODOS los addons de la comunidad",
-      "imageUrl": "https://raw.githubusercontent.com/TU-USUARIO/Gelato-Community/main/logo.png",
+      "imageUrl": "https://raw.githubusercontent.com/sdd212013-rgb/Gelato-Community/main/logo.png",
       "id": "gelato-community",
       "version": "1.0.0",
-      "manifestUrl": "https://raw.githubusercontent.com/TU-USUARIO/Gelato-Community/main/manifest.json",
+      "manifestUrl": "https://raw.githubusercontent.com/sdd212013-rgb/Gelato-Community/main/manifest.json",
       "targetAbi": "10.11.0.0",
       "targetAbiVersion": "10.11.0.0",
       "targetFramework": "net8.0",
