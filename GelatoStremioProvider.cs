@@ -241,7 +241,7 @@ public class GelatoStremioProvider(
         if (catalog == null)
         {
             log.LogError(
-                "SearchAsync: {mediaType} has no search catalog, please enable one in aiostreams.",
+                ("SearchAsync: {mediaType} has no search catalog. Please enable a search-capable catalog in your Stremio addon.",
                 mediaType
             );
             return [];
