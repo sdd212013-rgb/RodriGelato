@@ -50,7 +50,7 @@ For a more in depth guide see [starter guide](https://github.com/lostb1t/Gelato/
 
 ## Notes
 
-- Only **AIOStreams** is supported
+- Ahora soporta **cualquier addon de Stremio** (Torrentio, Comet, MediaFusion, Orion, etc.)
 - **P2P currently in beta**
 
 ### FAQ
