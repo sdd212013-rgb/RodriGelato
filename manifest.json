@@ -12,4 +12,15 @@
   "owner": "sdd212013-rgb",
   "category": "General",
   "imageUrl": "https://raw.githubusercontent.com/sdd212013-rgb/RodriGelato/main/logo.png"
-}
+  "versions": [
+      {
+        "version": "1.0.0",
+        "changelog": "Versión inicial comunitaria",
+        "targetAbi": "10.11.0.0",
+        "source": "GitHub",
+        "url": "https://github.com/sdd212013-rgb/RodriGelato/releases/download/v1.0.0/Gelato.zip",
+        "checksum": "AUTO"
+      }
+    ]
+  }
+]
