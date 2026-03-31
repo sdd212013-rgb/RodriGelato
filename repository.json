@@ -13,14 +13,6 @@
       "targetFramework": "net8.0",
       "source": "GitHub",
       "timestamp": "2026-03-31T00:00:00Z"
-      "versions": [
-      {
-        "version": "1.0.0",
-        "changelog": "Versión inicial comunitaria",
-        "targetAbi": "10.11.0.0",
-        "source": "GitHub",
-        "url": "https://github.com/sdd212013-rgb/RodriGelato/releases/download/v1.0.0/Gelato.zip",
-        "checksum": "AUTO"
     }
   ]
 }
