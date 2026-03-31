@@ -36,7 +36,8 @@ Bring the power of Stremio addons directly into Jellyfin. This plugin replaces J
 2. Make sure you are running Jellyfin 10.11 and add `https://raw.githubusercontent.com/lostb1t/Gelato/refs/heads/gh-pages/repository.json` to your plugin repositories.
 
 3. Install and configure the plugin.
-   **Note:** Only **AIOStreams** is supported.
+   **Nota:** Ahora soporta **cualquier addon de Stremio** (Torrentio, Comet, MediaFusion, Orion, etc.).  
+AIOStreams sigue siendo compatible si quieres un agregador.
 
 4. Add the configured base paths to the Jellyfin library of your choice. After adding them, start a library scan.
 
