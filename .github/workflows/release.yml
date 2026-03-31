@@ -1,31 +1,53 @@
-name: Release
+name: Build and Release Gelato Community
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.RELEASE_TOKEN }}
-          fetch-depth: 0
-      
-      - name: Configure Git
-        run: |
-          git config user.name "${{ github.repository_owner }}"
-          git config user.email "${{ github.event.pusher.email || format('{0}@users.noreply.github.com', github.repository_owner) }}"
-      
-      - name: Set up git-cliff
-        uses: kenji-miyake/setup-git-cliff@v1
 
-      - name: Run make release
-        run: make release
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build Release
+        run: dotnet build -c Release --no-restore
+
+      - name: Create plugin ZIP
+        run: |
+          mkdir -p plugin-zip
+          cp Gelato/bin/Release/net9.0/Gelato.dll plugin-zip/
+          # Copia también los DLLs que el proyecto mantiene (por el target CleanupJellyfinDlls)
+          cp Gelato/bin/Release/net9.0/JellyfinLoaderStub*.dll plugin-zip/ 2>/dev/null || true
+          cp Gelato/bin/Release/net9.0/0Harmony.dll plugin-zip/ 2>/dev/null || true
+          cp Gelato/bin/Release/net9.0/MonoTorrent*.dll plugin-zip/ 2>/dev/null || true
+          cp Gelato/bin/Release/net9.0/Mono.Nat.dll plugin-zip/ 2>/dev/null || true
+          cp Gelato/bin/Release/net9.0/ReusableTasks.dll plugin-zip/ 2>/dev/null || true
+          cd plugin-zip
+          zip -r ../Gelato.zip .
+          cd ..
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Gelato.zip
+          tag_name: ${{ github.ref_name }}
+          name: Gelato Community ${{ github.ref_name }}
+          body: |
+            Fork comunitario de Gelato para Jellyfin.
+            Soporta **cualquier addon de Stremio** (Torrentio, Comet, MediaFusion, Orion, etc.).
+          draft: false
+          prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
