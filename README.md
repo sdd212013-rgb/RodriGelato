@@ -44,4 +44,4 @@ Este plugin reemplaza la búsqueda de Jellyfin con resultados de Stremio y permi
 
 Añade este repositorio en Jellyfin:
 
-https://raw.githubusercontent.com/sdd212013-rgb/RodriGelato/refs/heads/gh-pages/repository.json
+https://raw.githubusercontent.com/sdd212013-rgb/RodriGelato/gh-pages/repository.json
