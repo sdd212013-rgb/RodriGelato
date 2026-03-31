@@ -1,0 +1,26 @@
+{
+  "name": "RodriGelato",
+  "version": "1.0.0",
+  "changelog": "Fork comunitario - Soporte total para cualquier addon de Stremio (Torrentio, Comet, MediaFusion, Orion, etc.)",
+  "targetAbi": "10.11.0.0",
+  "targetAbiVersion": "10.11.0.0",
+  "targetFramework": "net8.0",
+  "generalPath": "Gelato.dll",
+  "guid": "94EA4E14-8163-4989-96FE-0A2094BC2D6A",
+  "description": "Jellyfin Stremio Integration Plugin - Versión Comunidad",
+  "overview": "Reemplaza la búsqueda de Jellyfin con CUALQUIER addon de la comunidad de Stremio",
+  "owner": "sdd212013-rgb",
+  "category": "General",
+  "imageUrl": "https://raw.githubusercontent.com/sdd212013-rgb/RodriGelato/main/logo.png"
+  "versions": [
+      {
+        "version": "1.0.0",
+        "changelog": "Versión inicial comunitaria",
+        "targetAbi": "10.11.0.0",
+        "source": "GitHub",
+        "url": "https://github.com/sdd212013-rgb/RodriGelato/releases/download/v1.0.0/Gelato.zip",
+        "checksum": "AUTO"
+      }
+    ]
+  }
+]
