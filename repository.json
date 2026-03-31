@@ -1,7 +1,7 @@
 {
   "repositories": [
     {
-      "name": "Gelato Community",
+      "name": "RodriGelato",
       "owner": "sdd212013-rgb",
       "overview": "Jellyfin Stremio plugin - Soporta TODOS los addons de la comunidad",
       "imageUrl": "https://raw.githubusercontent.com/sdd212013-rgb/RodriGelato/main/logo.png",
